@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.universo {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/04/23/Recortada/img_jfita_20171106-174803_imagenes_lv_getty_istock-610144848-kPaB-U442882206057RUG-992x558@LaVanguardia-Web.jpg);
+    background-size: cover;
+    position: relative;
+}
+.tierra {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://www.biologiasur.org/images/stories/biosfera/glosario.gif);
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+.tierra:hover .luna {
+    transform: translate(-100%, -100%)
+}
+.luna {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/10/19/38/moon-1898047__340.png);
+    background-size: contain;
+    position: absolute;
+    transition: all .3s;
+}
+.orbita-tierra {
+    border: 5px solid blue;
+    width: 800px;
+    height: 550px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sol {
+    width: 80px;
+    height: 80px;
+    background-image: url(https://www.stickpng.com/assets/images/580b585b2edbce24c47b2711.png);
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    transition: all .3s;
+}
+.sol:hover{
+    transform: translate(-50%,-50%) scale(2) rotate(360deg)
+}
+.orbita-venus {
+    border: 4px solid green;
+    width: 600px;
+    height: 350px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+.venus {
+    width: 150px;
+    height: 150px;
+    background-image: url(http://opcionweb.com/webs/espacio/mercurio.png);
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%); 
+}
+.orbita-mercurio {
+    border: 4px solid red;
+    width: 400px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+.mercurio {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://www.stickpng.com/assets/thumbs/5a00de530e8525eec2752fff.png);
+    background-size: contain;
+    position: absolute;
+    bottom: 0%;
+    right:  20%;
+    transform: translate(70%,40%)
+}
